@@ -1,0 +1,6 @@
+services:
+  commerce_product_api.normalizer.product_variations:
+    class: Drupal\commerce_product_api\Normalizer\ProductVariationsNormalizer
+    arguments: ['@entity.repository']
+    tags:
+      - { name: normalizer, priority: 9 }
