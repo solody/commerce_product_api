@@ -1,11 +1,8 @@
 langcode: en
 status: true
 dependencies:
-  config:
-    - field.storage.commerce_product.variations
   module:
     - commerce_product
-    - image
     - rest
     - serialization
 id: api_products
@@ -318,9 +315,7 @@ display:
         - request_format
         - url
         - url.query_args
-      tags:
-        - 'config:field.storage.commerce_product.field_slide_images'
-        - 'config:field.storage.commerce_product.variations'
+      tags: {  }
   rest_export_1:
     display_plugin: rest_export
     id: rest_export_1
@@ -367,6 +362,4 @@ display:
         - request_format
         - url
         - url.query_args
-      tags:
-        - 'config:field.storage.commerce_product.field_slide_images'
-        - 'config:field.storage.commerce_product.variations'
+      tags: {  }

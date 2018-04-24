@@ -2,7 +2,9 @@ name: 'Commerce Product API'
 type: module
 description: 'My Awesome Module'
 core: 8.x
-package: 'Custom'
+package: Custom
 dependencies:
   - commerce_product
   - rest
+  - serialization
+  - views
