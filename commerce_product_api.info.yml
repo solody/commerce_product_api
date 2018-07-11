@@ -4,7 +4,12 @@ description: 'My Awesome Module'
 core: 8.x
 package: Custom
 dependencies:
+  - basic_auth
   - commerce_product
+  - commerce_product_api
   - rest
   - serialization
+  - simple_oauth
+  - user
   - views
+  - search_api

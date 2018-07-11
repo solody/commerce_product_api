@@ -17,3 +17,17 @@ GET http://{{host}}/api/rest/views/product-variations/1?_format=json
 Accepts: application/json
 
 ###
+# 产品全文搜索，产品索引必须有 type和 categories字段，才能支持产品类型和产品分类搜索
+POST http://{{host}}/api/rest/commerce-product/product-search
+Content-Type: application/json
+
+{
+  "index_id": "product_search_index",
+  "product_type": "booking_sms",
+  "product_categories": [1,3],
+  "keywords": "",
+  "page": 0,
+  "limit": 10
+}
+
+###

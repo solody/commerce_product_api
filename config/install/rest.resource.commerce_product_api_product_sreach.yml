@@ -1,0 +1,21 @@
+langcode: zh-hans
+status: true
+dependencies:
+  module:
+    - basic_auth
+    - commerce_product_api
+    - serialization
+    - simple_oauth
+    - user
+id: commerce_product_api_product_sreach
+plugin_id: commerce_product_api_product_sreach
+granularity: resource
+configuration:
+  methods:
+    - POST
+  formats:
+    - json
+  authentication:
+    - basic_auth
+    - oauth2
+    - cookie
