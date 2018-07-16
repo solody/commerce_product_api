@@ -122,7 +122,7 @@ class ProductSreach extends ResourceBase {
     $query->range($page * $limit, $limit);
 
     // Add sorting.
-    $query->sort('search_api_relevance', 'DESC');
+    $query->sort('changed', 'DESC');
 
     // Execute the search.
     /** @var \Drupal\search_api\Query\ResultSet $results */
