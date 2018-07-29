@@ -141,4 +141,13 @@ class ProductSreach extends ResourceBase {
   public function permissions() {
     return [];
   }
+
+  /**
+   * {@inheritdoc}
+   */
+  protected function getBaseRouteRequirements($method) {
+    $requirements = parent::getBaseRouteRequirements($method);
+    $requirements['_product_search_api'] = 'TRUE';
+    return $requirements;
+  }
 }
